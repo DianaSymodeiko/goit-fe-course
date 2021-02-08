@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.articles {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 0;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+.menu {
+  margin-left: 200px;
+}
+
+.menu li {
+  display: inline-block;
+    font-size: 14px;
+    font-family: 'Pathway Gothic One', sans-serif;;
+    color: rgb(98, 98, 98);
+    width: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-left: 5px;
+}
+.article {
+  font-size: 14px;
+  display: inline-block;
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.article:nth-child(even) {
+  margin-right: 0;
+}
+.article__label {
+  display: block;
+  margin-bottom: 10px;
+  color: grey; 
+}
+
+.article__title {
+  margin-bottom: 10px;
+}
