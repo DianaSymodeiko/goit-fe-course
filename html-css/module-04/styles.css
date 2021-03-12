@@ -1,0 +1,150 @@
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  .wrapper {
+    max-width: 1250px;
+    padding: 15px;
+    display: inline-block; 
+  }
+
+  .header {
+    max-width: 1250px;
+    padding: 15px;
+  }
+
+  .month {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+
+  .menu li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+  }
+
+  .menu {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 64px);
+    text-align: right;
+  }
+
+  .menu li:hover {
+    color: rgb(70, 224, 191);
+  }
+
+  .header ::after {
+    display: inline-block;
+    clear: both;
+    width: 100%;
+  }
+
+  .title {
+    text-align: center; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 28px;
+    color: rgb(81, 81, 81);
+    font-family: "Roboto";  
+  }
+
+  .title::after {
+    display: inline-block;
+    content: '';
+    text-align: center;
+    width: 120px;
+    height: 5px;
+    background: rgb(78, 198, 171);
+    margin-top: 20px;
+  }
+
+  .article {
+    display: inline-block;
+    padding: 15px;
+  }
+
+  .article_footer {
+    color: rgb(225,225,225);
+    background-color: rgb(50,50,50);
+    font-size: 16px;
+    height: 35px;
+  }
+
+  .article_footer ::after {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+
+  .article:hover .article_footer {
+    background: rgb(26, 188, 156);
+  }
+
+  .article:hover .article_price {
+    background: rgb(120, 209, 191);
+  }
+
+  .article_description {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .article_price {
+    display: block;
+    padding: 10px;
+    background-color:dimgray;
+    height: 100%;
+    float: right;
+  }
+
+  .article1 {
+    display: inline-block;
+    width: 380px;
+    margin: 10px;
+    padding-left: 20px;
+  }
+
+  .article1_title {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .article1_title::after {
+    display: block;
+    content: '';
+    width: 150px;
+    height: 3px;
+    background: rgb(78, 198, 171);
+    margin-top: 10px;
+  }
+
+  .article1_description {
+    display: inline-block;
+  }
+
+  .article1_information {
+    display: inline-block;
+    background-color: rgb(78, 198, 171);
+    border: none;
+    color:white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+
+  }
