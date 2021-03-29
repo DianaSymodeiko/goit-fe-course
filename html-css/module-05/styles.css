@@ -6,7 +6,9 @@
 
   .wrapper {
     max-width: 1600px;
-    display: inline-block; 
+    display: block; 
+    margin-left: 150px;
+    
   }
   .header {
     max-width: 1600px;
