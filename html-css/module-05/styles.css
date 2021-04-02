@@ -4,16 +4,13 @@
     margin: 0;
   }
 
-  .wrapper {
-    max-width: 1600px;
-    display: block; 
-    margin-left: 150px;
-    
-  }
   .header {
-    
     padding-left: 150px;
     padding-right: 100px;
+  }
+
+  .head {
+    max-width: 1600px;
   }
 
   .month {
@@ -21,23 +18,23 @@
     vertical-align: middle;
     width: 60px;
     height: 60px;
-    text-decoration: none;
     padding-top: 20px;
     font-size: 20px;
-    color: #000000;
-    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
   }
   .month::first-letter {
     color: rgb(70, 224, 191);
   }
 
-  .menu li {
+  .menu-link {
     display: inline-block;
     padding: 10px;
     font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: 700;
     border-bottom: 2px solid transparent;
   }
@@ -49,8 +46,33 @@
     text-align: right;
   }
 
-  .menu li:hover {
+  .menu :hover {
     color: rgb(70, 224, 191);
+  }
+
+  .travel {
+    position: relative; 
+  }
+
+  .travel_content {
+    max-width: 1600px; 
+    min-width: 350px;
+    height: 600px;
+    margin: 0, auto;
+    }
+
+  .travel_content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(./image/slide4.jpg) center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: cover;
+    filter: brightness(0.6);
   }
 
   .travel_title  {
@@ -63,48 +85,6 @@
     font-weight: 900;
   }
 
-
-  .button1 {
-    background-image: url('https://www.flaticon.com/svg/vstatic/svg/892/892512.svg?token=exp=1616835798~hmac=ed2d0b6db328fa349eb040c50bfa0c02');
-    background-color: rgb(78, 198, 171);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.7;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 200px;
-    width: 104px;
-    height: 104px;
-    left: 245px;
-   }
-   
-
-  .button2 {
-    background-image: url('https://www.flaticon.com/svg/vstatic/svg/892/892528.svg?token=exp=1616835775~hmac=9d12dfd3fc8e9b8b509f8fde0ab6e9c3');
-    background-color: rgb(78, 198, 171);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.7;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 200px;
-    width: 104px;
-    height: 104px;
-    left: 1252px;
-   }
-
-   .button1:hover {
-     background-color: rgb(21, 150, 122);
-   }
-   .button2:hover {
-    background-color: rgb(21, 150, 122);
-   }
-   
-   
   .travel_subtitle {
     text-align: center; 
     padding-top: 10px;
@@ -114,26 +94,52 @@
     font-family: "Roboto";  
   }
 
-  .travel {
-    width: 1600px;
-    height: 600px;
-    position: relative; 
-  }
-  
-  .travel::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: url(./image/slide4.jpg) center;
+  .button1 {
+    background-image: url('https://www.flaticon.com/svg/vstatic/svg/860/860790.svg?token=exp=1617200540~hmac=195f41e587cfe1bd59af3607c9c8ef5f');
+    background-color: rgb(78, 198, 171);
+    background-size: 50%;
     background-repeat: no-repeat;
-    z-index: -1;
-  }
+    background-position: center;
+    opacity: 0.7;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 200px;
+    width: 104px;
+    height: 104px;
+    left: calc(50% - 700px);
+   }
+   
 
-  .magazine {
+  .button2 {
+    background-image: url('https://www.flaticon.com/svg/vstatic/svg/152/152418.svg?token=exp=1617200589~hmac=44b9bdc2e07463c02efcff1e289a9d34');
+    background-color: rgb(78, 198, 171);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 200px;
+    width: 104px;
+    height: 104px;
+    right: calc(50% - 700px);
+   }
+
+   .button1:hover {
+     background-color: rgb(21, 150, 122);
+   }
+   .button2:hover {
+    background-color: rgb(21, 150, 122);
+   }
+
+
+  .magazine_info {
+    max-width: 1600px;
     text-align: center;
+    margin: 0, auto;
+    min-width: 350px;
   }
 
   .magazine_title {
@@ -159,6 +165,7 @@
 
   .goods {
     display:inline-block;
+    width: 250px;
     padding-left: 20px;
     position: relative; 
   }
@@ -169,13 +176,14 @@
 
   .goods_image {
     display: inline-block;
-    height: 250px;
-    width: 250px; 
+    max-width: 100%; 
   }
 
   .goods_image:hover {
-     filter: contrast(40%);
+     filter: brightness(0.5);
   }
+
+  
 
   .icons {
     display: none;
@@ -196,7 +204,7 @@
     background-repeat: no-repeat;
     background-position: center;
     border-width: 1px;
-    border-color: rgb(0, 0, 0);
+    border-color: rgb(255, 255, 255);
     border-style: solid;
   }
 
@@ -204,53 +212,57 @@
     background-color: rgb(61, 209, 177);
   }
 
+  /*.icon:hover > .goods_image {
+    filter: brightness(0.5);
+  }*/
+
   .heart {
-    background-image: url('https://www.flaticon.com/svg/vstatic/svg/812/812327.svg?token=exp=1616835922~hmac=3cd43a4d99aa352665181c086e1b24de');
+    background-image: url('https://www.flaticon.com/svg/vstatic/svg/535/535285.svg?token=exp=1617200123~hmac=c0ea89843d6614c5e8ffdd2da09bfbf5');
+    
   }
 
   .arrows {
-    background-image: url('https://www.flaticon.com/svg/vstatic/svg/339/339894.svg?token=exp=1616836130~hmac=4a6c2f8a4dd293cd717b20630899e07e');
+    background-image: url('https://www.flaticon.com/svg/vstatic/svg/339/339894.svg?token=exp=1617200329~hmac=5a6ce6eb953c3003be4cb6c3dee8c52a');
   }
 
   .clock {
-    background-image: url('https://www.flaticon.com/svg/vstatic/svg/860/860806.svg?token=exp=1616836391~hmac=af9a59ae4a2e235fe49a2ca3b3e317e4');
+    background-image: url('https://www.flaticon.com/svg/vstatic/svg/860/860806.svg?token=exp=1617200370~hmac=c1cdd259c5d1547dea2da7abc73a37ea');
   }
 
   .cart {
-    background-image: url('https://www.flaticon.com/svg/vstatic/svg/833/833314.svg?token=exp=1616836602~hmac=5a6a1d854a92de68101be145d41e04ef');
+    background-image: url('https://www.flaticon.com/svg/vstatic/svg/833/833314.svg?token=exp=1617200441~hmac=b0083a4f7eb5ed9de4a9f9c6eae45069');
   }
 
-
-  .footer {
+  .card_info {
     color: rgb(225,225,225);
     background-color: rgb(50,50,50);
     font-size: 16px;
     height: 35px;
   }
 
-  .footer ::after {
+  .card_info ::after {
     content: '';
     display: block;
     width: 100%;
     clear: both;
   }
 
-  .goods:hover .footer {
+  .goods:hover .card_info {
     background: rgb(26, 188, 156);
   }
 
-  .goods:hover .footer_price {
+  .goods:hover .card_price {
     background: rgb(120, 209, 191);
   }
 
-  .footer_description {
+  .card_description {
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
     padding: 10px;
   }
 
-  .footer_price {
+  .card_price {
     display: block;
     padding: 10px;
     background-color:dimgray;
@@ -258,7 +270,9 @@
     float: right;
   }
 
-  .address {
+  .footer_info {
+    max-width: 1600px;
+    min-width: 350px;
     height: 75px;
     margin-top: 50px;
     padding-top: 30px;

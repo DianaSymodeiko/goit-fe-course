@@ -5,32 +5,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
 <link rel="stylesheet" href="styles.css">
-
 </head>
+
+
 <body>
-<div class="wrapper">
 <header class="header">
-<p class="month">MART</p>
-<nav>
-<ul class="menu">
-    <li>HOME</li>
-    <li>ABOUT US</li>
-    <li>PAGE</li>
-    <li>SHOP</li>
-    <li>BLOG</li>
-    <li>CONTACT US</li>
-</ul>
+  <section class="head">
+  <div class ="month">
+  <a href="#" target="_blank" :title="Mart" class="month-link">Mart</a>
+</div>
+<nav class="menu">
+  <a href="#" target="_blank" :title="Home" class="menu-link">Home</a>
+  <a href="#" target="_blank" :title="About us" class="menu-link">About us</a>
+  <a href="#" target="_blank" :title="Page" class="menu-link">Page</a>
+  <a href="#" target="_blank" :title="Shop" class="menu-link">Shop</a>
+  <a href="#" target="_blank" :title="Blog" class="menu-link">Blog</a>
+  <a href="#" target="_blank" :title="Contact us" class="menu-link">Contact us</a>
 </nav>
-</header>
-<section class="travel">
-  <h2 class="travel_title">AFFORDABLE PARIS TOURS</h2>
-  <p class="travel_subtitle">SITY TOURS/TOUR TICKETS/TOUR GUIDES </p>
-  <button class="button1"></button>
-  <button class="button2"></button>      
 </section>
+</header>
+
+
+<section class="travel">
+  <div class="travel_content">
+    <h2 class="travel_title">AFFORDABLE PARIS TOURS</h2>
+    <p class="travel_subtitle">SITY TOURS/TOUR TICKETS/TOUR GUIDES </p>
+    <button class="button1"></button>
+    <button class="button2"></button>      
+</div>
+</section>
+
+
 <section class="magazine">
+  <div class="magazine_info">
   <h3 class="magazine_title">NEW COLECTION</h3>
-  <article class="goods">
+  <div class="goods">
   <img class="goods_image" src="image/category-2.jpg" alt="man in blue">
   <div class="icons">
     <i class="icon heart"></i>
@@ -38,12 +47,12 @@
     <i class="icon clock"></i>
     <i class="icon cart"></i>
   </div>
-  <footer class="footer">
-    <span class="footer_description">BLUE TSHIRT</span>
-    <span class="footer_price">$26</span>
-  </footer>
-  </article>
-  <article class="goods"> 
+  <div class="card_info">
+    <span class="card_description">BLUE TSHIRT</span>
+    <span class="card_price">$26</span>
+  </div>
+</div>
+  <div class="goods"> 
   <img class="goods_image" src="image/category-3.jpg" alt="man in yellow">
   <div class="icons">
     <i class="icon heart"></i>
@@ -51,12 +60,12 @@
     <i class="icon clock"></i>
     <i class="icon cart"></i>
   </div>
-  <footer class="footer">
-    <span class="footer_description">YELLOW TSHIRT</span>
-    <span class="footer_price">$21</span>
-  </footer>
-</article>
-  <article class="goods">
+  <div class="card_info">
+    <span class="card_description">YELLOW TSHIRT</span>
+    <span class="card_price">$21</span>
+  </div>
+</div>
+  <div class="goods">
   <img class="goods_image" src="image/category-4.jpg" alt="woman in a bathing suit">
   <div class="icons">
     <i class="icon heart"></i>
@@ -64,12 +73,12 @@
     <i class="icon clock"></i>
     <i class="icon cart"></i>
   </div>
-  <footer class="footer">
-    <span class="footer_description">COOL LINGERIE</span>
-    <span class="footer_price">$56</span>
-  </footer>
-</article>
-<article class="goods"> 
+  <div class="card_info">
+    <span class="card_description">COOL LINGERIE</span>
+    <span class="card_price">$56</span>
+  </div>
+</div>
+<div class="goods"> 
   <img class="goods_image" src="image/woman flover.jpg" alt="girl">
   <div class="icons">
     <i class="icon heart"></i>
@@ -77,13 +86,17 @@
     <i class="icon clock"></i>
     <i class="icon cart"></i>
   </div>
-  <footer class="footer">
-    <span class="footer_description">WOMAN SHIRT</span>
-    <span class="footer_price">$31</span>
-  </footer>
-</article>
-</section>
-<div class="address">All Rights Reserved © Dokan | Designed ThemenGraph</div>
+  <div class="card_info">
+    <span class="card_description">WOMAN SHIRT</span>
+    <span class="card_price">$31</span>
+  </div>
 </div>
+</div>
+</section>
+
+<footer class="footer">
+  <div class="footer_info">All Rights Reserved © Dokan | Designed ThemenGraph
+  </div>
+</footer>
 </body>
 </html>      
