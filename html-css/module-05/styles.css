@@ -5,12 +5,12 @@
   }
 
   .header {
-    padding-left: 150px;
-    padding-right: 100px;
+    min-width: 350px;
   }
 
   .head {
     max-width: 1600px;
+    margin: 0 auto;
   }
 
   .month {
@@ -51,14 +51,14 @@
   }
 
   .travel {
-    position: relative; 
+    position: relative;
+    min-width: 350px;
   }
 
   .travel_content {
     max-width: 1600px; 
-    min-width: 350px;
     height: 600px;
-    margin: 0, auto;
+    margin: 0 auto;
     }
 
   .travel_content::before {
@@ -95,7 +95,7 @@
   }
 
   .button1 {
-    background-image: url('https://www.flaticon.com/svg/vstatic/svg/860/860790.svg?token=exp=1617200540~hmac=195f41e587cfe1bd59af3607c9c8ef5f');
+    background-image: url('./image/iconfinder_left-arrow-back_2931162.png');
     background-color: rgb(78, 198, 171);
     background-size: 50%;
     background-repeat: no-repeat;
@@ -112,7 +112,7 @@
    
 
   .button2 {
-    background-image: url('https://www.flaticon.com/svg/vstatic/svg/152/152418.svg?token=exp=1617200589~hmac=44b9bdc2e07463c02efcff1e289a9d34');
+    background-image: url('./image/iconfinder_right-forward-arrow_2931159.png');
     background-color: rgb(78, 198, 171);
     background-size: 50%;
     background-repeat: no-repeat;
@@ -134,12 +134,15 @@
     background-color: rgb(21, 150, 122);
    }
 
+   .magazine {
+    min-width: 350px
+   }
+
 
   .magazine_info {
     max-width: 1600px;
     text-align: center;
-    margin: 0, auto;
-    min-width: 350px;
+    margin: 0 auto;
   }
 
   .magazine_title {
@@ -165,7 +168,7 @@
 
   .goods {
     display:inline-block;
-    width: 250px;
+    width: 300px;
     padding-left: 20px;
     position: relative; 
   }
@@ -217,20 +220,20 @@
   }*/
 
   .heart {
-    background-image: url('https://www.flaticon.com/svg/vstatic/svg/535/535285.svg?token=exp=1617200123~hmac=c0ea89843d6614c5e8ffdd2da09bfbf5');
+    background-image: url('./image/20.png');
     
   }
 
   .arrows {
-    background-image: url('https://www.flaticon.com/svg/vstatic/svg/339/339894.svg?token=exp=1617200329~hmac=5a6ce6eb953c3003be4cb6c3dee8c52a');
+    background-image: url('./image/shuffle.png');
   }
 
   .clock {
-    background-image: url('https://www.flaticon.com/svg/vstatic/svg/860/860806.svg?token=exp=1617200370~hmac=c1cdd259c5d1547dea2da7abc73a37ea');
+    background-image: url('./image/time_clock_icon_129580.png');
   }
 
   .cart {
-    background-image: url('https://www.flaticon.com/svg/vstatic/svg/833/833314.svg?token=exp=1617200441~hmac=b0083a4f7eb5ed9de4a9f9c6eae45069');
+    background-image: url('./image/shopping-cart.png');
   }
 
   .card_info {
@@ -270,9 +273,13 @@
     float: right;
   }
 
+  .footer {
+    min-width: 350px;
+  }
+
   .footer_info {
     max-width: 1600px;
-    min-width: 350px;
+    margin: 0 auto;
     height: 75px;
     margin-top: 50px;
     padding-top: 30px;
