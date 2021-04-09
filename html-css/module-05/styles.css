@@ -46,7 +46,6 @@
 
   .menu :hover {
     color: #46e0bf;
-    border-bottom: 2px solid  #46e0bf;
   }
 
   .travel {
@@ -210,10 +209,6 @@
   .icon:hover {
     background-color: #3dd1b1;
   }
-
-  /*.icon:hover > .goods_image {
-    filter: brightness(0.5);
-  }*/
 
   .heart {
     background-image: url('./image/20.png');
