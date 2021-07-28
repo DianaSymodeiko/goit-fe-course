@@ -1,0 +1,205 @@
+@import url('vars.css');
+@import url('reset.css');
+@import url('fonts.css');
+
+
+.masthead {
+max-width: 1500px;
+min-height: 60px;
+margin: 0 auto; 
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 9.375rem;
+}
+
+.logo {
+display: inline-block;
+color: var(--yellow-color);
+font-family: 'Dancing Script';
+font-size: 2rem;
+font-weight: 400;
+font-style: normal;
+text-decoration: none;
+}
+
+.nav {
+display: flex;
+}
+
+.nav-item {
+display: inline-block;
+margin-left: 3.75rem;
+}
+
+.nav-item:first-child {
+margin-left: 0;
+}
+
+.nav-link {
+display: block;
+padding-top: 0.75rem;
+color: var(--primary-dark-color);
+font-family: 'Montserrat';
+font-size: 1rem;
+font-weight: 700;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+.nav-link:hover {
+color: var(--yellow-color);
+}
+
+.information-wrapper {
+max-width: 1500px;
+margin: 0 auto;
+}
+
+.section-header-caption {
+display: block;
+color: var(--grey-color);
+font-family: 'Libre Baskerville';
+font-size: 1.5rem;
+font-weight: 400;
+text-align: center;
+margin-bottom: 4.6875rem;
+}
+
+.section-header-title {
+margin-bottom: 1.25rem;
+color: var(--primary-dark-color);
+font-family: 'Montserrat';
+font-size: 1.875rem;
+font-weight: 700;
+text-transform: uppercase;
+text-align: center;
+}
+
+.information-list {
+max-width: 1500px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+
+}
+
+.information-list-item {
+flex: 0 0 30%;
+margin-bottom: 7.5rem;
+}
+
+.information-post-image-circle {
+width: 3.75rem;
+height: 3.75rem;
+position: absolute; 
+}
+
+.information-post-image {
+width: 2.5rem;
+height: 2.5rem;
+position: relative;
+margin-top: 0.5rem;
+margin-left: 0.5625rem;
+}
+
+.information-post-header {
+display: block;
+margin-bottom: 0.875rem;
+margin-top: 1.25rem;
+font-size: 1rem;
+font-family: 'Montserrat';
+color: var(--primary-dark-color);
+text-transform: uppercase;
+font-weight: 700;
+text-align: center;
+}
+
+.information-post-text {
+font-size: 1rem;
+font-family: 'Roboto Slab';
+color: var(--secondary-dark-color);
+font-weight: 400;
+text-align: center;
+}
+
+.contacts-wrapper {
+max-width: 1500px;
+min-height: 600px;
+margin: 0 auto;
+background-color: var(--primary-dark-color);
+background-image: url(image/Map\ Image.png);
+background-repeat: no-repeat;
+background-position-x: right;
+background-position-y: center;
+
+}
+
+.header-title {
+margin-bottom: 1.25rem;
+padding-top: 6.25rem;
+color: var(--primary-white-color);
+font-family: 'Montserrat';
+font-size: 1.875rem;
+font-weight: 700;
+text-transform: uppercase;
+text-align: center;
+}
+
+.header-caption {
+display: block;
+color: var(--grey-color);
+font-family: 'Libre Baskerville';
+font-size: 1.5rem;
+font-weight: 400;
+text-align: center;
+margin-bottom: 4.6875rem;
+}
+
+.form {
+max-width: 800px;
+margin: 0 auto;
+display: flex;
+}
+
+input {
+margin-bottom: 1rem ;
+padding: 1rem;
+width: 25rem;  
+display: flex;  
+}
+
+input:last-child {
+margin-bottom: 0;
+}
+
+input:required {
+border-color: forestgreen;
+}
+
+input:not(:required) {
+border-color: orangered;
+}
+
+input::placeholder {
+font-size: 0.8rem;
+color: #424242;
+text-transform: uppercase;
+}
+
+.message {
+height: 11.6rem;
+margin-left: 1rem;
+
+}
+
+button {
+text-transform: uppercase;
+margin: 0 auto;
+background-color: var(--yellow-color);
+color: var(--primary-white-color);
+width: 8rem; 
+height: 3rem; 
+}
+
+
