@@ -1,0 +1,177 @@
+@import url('./vars.css');
+@import url('./reset.css');
+@import url('./fonts.css');
+@import url('./base.css');
+@import url('./masthead.css');
+@import url('./team.css');
+@import url('./bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap-grid.css');
+  
+.masthead-wrapper {
+    background-image: url(../module-08/image/Vector\ Smart\ Object.png);
+    background-position: center;
+    background-repeat: no-repeat; 
+    margin: 0 auto;
+    height: 700px;
+    text-align: center;
+    margin-bottom: 100px; 
+     
+}
+
+    .container-section {
+     min-width: 320px;
+     max-width: 960px;
+     margin: 0 auto;
+    }
+
+    .logo {
+    font-size: 1.2rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    color: var(--grey-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    }
+    
+  
+    .nav-link {
+    font-family: 'Montserrat';    
+    font-size: 1rem;
+    font-style: normal;
+    color: var(--grey-color);
+    text-decoration: none;
+    
+    }
+
+    .nav-link:not(:first-child) {
+        margin-left: 30px;    
+    }
+
+    .nav-link:hover {
+        border-radius: 30px;
+        border: 2px solid;
+        padding: 10px;
+    }
+
+    .masthead {
+      margin-bottom: 100px;
+      margin-top: 30px;
+    }
+
+
+    .section-title {
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: var(--grey-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    }
+    
+    .section-subtitle {
+    font-size: 18px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    color: var(--primary-dark-color);
+    text-align: center;
+    margin-top: 20px;     
+    }
+
+    .button {   
+    border-radius: 20px;
+    border: var(--red-color);
+    background-color: var(--red-color);
+    margin-top: 30px;
+    width: 280px;
+    height: 40px;
+    color: var(--primary-white-color);
+    font-size: 14px;
+    font-family: "Montserrat";
+    text-decoration: none;
+    font-weight: bold;
+    }
+      
+
+/*TEAM*/
+
+    .container {
+    min-width: 320px;
+    max-width: 960px;
+    margin: 0 auto;   
+    }
+
+
+    .section-header {
+    font-size: 28px;
+    font-family: "Montserrat";
+    color: var(--primary-dark-color);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+    
+    .team-card {
+    width: 200px;
+    margin:  0 auto;
+    }
+    
+    .team-card-image{
+    width: 124px;
+    height: 124px;
+    margin: 0 auto;
+    }
+    
+    .team-card-meta{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    }
+    
+    .card-name {
+    display: block;
+    color: var(--primary-dark-color);
+    font-family: "Montserrat";
+    font-weight: bold;
+    
+    }
+    
+    .card-info {
+    font-family: "Roboto";
+    color: var(--grey-color);
+    margin-top: 20px;
+    }
+    
+    .more {
+    display: block;
+    margin: 0 auto;  
+    border-radius: 20px;
+    border: 2px solid var(--red-color);
+    width: 280px;
+    height: 40px;
+    color: var(--red-color);
+    font-size: 12px;
+    font-family: "Montserrat";
+    text-decoration: none;
+    font-weight: bold; 
+    
+    }
+
+    .row {
+      display:flex;
+      flex-wrap: wrap;
+    }
+
+
+    .team-cards [class*="col-"]:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+
+    /*MEDIA*/
+ @media (min-width: 769px) {
+      
+    .section-title {
+         font-size: 48px;
+      }
+    }
