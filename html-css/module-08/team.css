@@ -1,0 +1,92 @@
+.container-section-team {
+min-width: 320px;
+max-width:1440px;
+margin: 0 auto;   
+}
+
+
+.section-header {
+font-size: 28px;
+font-family: "Montserrat";
+color: var(--primary-dark-color);
+font-weight: bold;
+text-align: center;
+margin-bottom: 50px;
+}
+
+.team-card {
+width: 200px;
+height: 230px;
+margin-top: 20px;
+margin:  0 auto;
+}
+
+.team-card-image{
+width: 124px;
+height: 124px;
+margin: 0 auto;
+}
+
+.team-card-meta{
+text-align: center;
+font-size: 14px;
+margin-top: 20px;
+}
+
+.card-name {
+display: block;
+color: var(--primary-dark-color);
+font-family: "Montserrat";
+font-weight: bold;
+
+}
+
+.card-info {
+font-family: "Roboto";
+color: var(--grey-color);
+margin-top: 20px;
+}
+
+.more {
+display: block;
+margin: 0 auto;  
+border-radius: 20px;
+border: 2px solid var(--red-color);
+width: 280px;
+height: 40px;
+color: var(--red-color);
+font-size: 14px;
+font-family: "Montserrat";
+text-decoration: none;
+font-weight: bold; 
+
+}
+
+
+/*MEDIA*/
+
+@media (min-width: 768px) {
+.team-list {
+display: flex;
+flex-wrap: wrap;
+width: 600px;
+margin: 0 auto;
+    
+} 
+.team-list-item {
+flex: 0 0 50%; 
+}
+
+}
+
+@media (min-width: 980px) {
+    .team-list {
+    display: flex;
+    justify-content: space-between;
+    width: 930px;
+    margin: 0 auto;
+    }
+    .team-list-item {
+    flex: 0 0 25%;
+    }
+}

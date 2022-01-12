@@ -1,0 +1,122 @@
+@import url("./vars.css");
+@import url("./reset.css");
+@import url("./fonts.css");
+@import url("./base.css");
+@import url("./masthead.css");
+@import url("./team.css");
+
+.masthead-wrapper {
+  background-image: url(../module-08/image/Vector\ Smart\ Object.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 700px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.container-section {
+  min-width: 320px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 100px;
+}
+
+.masthead {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+.menu {
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
+
+.logo {
+  display: block;
+  font-size: 24px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  color: var(--grey-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-link {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: var(--grey-color);
+  text-decoration: none;
+}
+
+.nav-link:not(:first-child) {
+  margin-left: 30px;
+}
+
+.nav-link:hover {
+  border-radius: 30px;
+  border: 2px solid;
+  padding: 10px;
+}
+
+.section-title {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: var(--grey-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  color: var(--primary-dark-color);
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.button {
+  border-radius: 20px;
+  border: var(--red-color);
+  background-color: var(--red-color);
+  width: 280px;
+  height: 40px;
+  color: var(--primary-white-color);
+  font-size: 14px;
+  font-family: "Montserrat";
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*MEDIA*/
+
+@media (min-width: 768px) {
+  .masthead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
+
+  .section-title {
+    font-size: 48px;
+    margin: 0 auto;
+  }
+
+  .menu {
+    margin-top: 30px;
+  }
+  .logo {
+    margin-top: 30px;
+  }
+}
