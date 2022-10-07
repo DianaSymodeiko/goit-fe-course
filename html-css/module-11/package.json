@@ -1,0 +1,14 @@
+{
+  "name": "module-11",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp html"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

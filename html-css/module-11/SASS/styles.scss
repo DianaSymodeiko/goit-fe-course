@@ -1,0 +1,397 @@
+*{
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+  }
+  
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  }
+
+$primary-font-stack: 'Montserrat' , sans-serif;
+$accent-font-stack: 'Kaushan Script' , cursive;
+$secondary-font-stack: 'Roboto' , sans-serif;
+
+$container-width: 1100px;
+
+$pink-color: #f38181;
+$yellow-color: #fce38a;
+$pale-color: #eaffd0;
+$aqua-color: #95e1d3;
+$primary-white-color: #ffffff;
+$primary-dark-color: #333333;
+$secondary-dark-color: #999999;
+
+
+
+.masthead-wrapper {
+   height: 900px;
+   //margin: 0 auto;
+   background-image: url(../image/team/picture.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   &::after {
+    position: absolute;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    content: '';
+    background-image: -webkit-gradient(linear, left bottom, left top, from $yellow-color, to $pink-color);
+    background-image: linear-gradient(to top, $yellow-color 0%, $pink-color 100%);
+    
+  }
+}
+
+.masthead-container{
+  max-width: $container-width;
+  height: 700px;
+   margin: 0 auto;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .masthead-wrapper {
+      background-image: url(../image/team/picture@2x.png);
+  }
+}
+
+.masthead {
+  max-width: $container-width;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 1;
+  }
+
+.logo {
+  display: inline-block;
+  color: $primary-white-color;
+  font-family: $primary-font-stack;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  & span {
+    text-transform: uppercase;   
+    } 
+  }
+
+.nav {
+  display: flex;
+  }
+      
+.nav__item {
+  display: inline-block;
+  margin-left: 60px;
+    &:first-child {
+      margin-left: 0;
+        }
+  }
+   
+.nav__link {
+  border-bottom: 3px solid transparent;
+  color: $primary-white-color;
+  font-family: $primary-font-stack;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    color: $yellow-color;
+    border-color: $yellow-color;
+    }
+  }
+  
+.greetings {
+  max-width: $container-width;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  margin-top: 200px;
+  z-index: 1;
+ }
+      
+.greetings__caption {
+  display: block;
+  margin-bottom: 24px;
+  color: $primary-white-color;
+  font-family: $accent-font-stack;
+  font-size: 60px;
+  font-weight: 400;
+ }
+      
+.greetings__title {
+  margin-bottom: 46px;
+  color: $primary-white-color;
+  font-family: $primary-font-stack;
+  font-size: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 600px;
+  margin: 0 auto;
+ }
+
+.button {
+  margin-top: 150px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $primary-white-color;
+  height: 100%;
+  border: solid white 2px;
+  background: transparent;
+  z-index: 1;
+  }
+
+//INFORMATION WRAPPER
+.information-wrapper {
+  max-width: $container-width;
+  background-color: $primary-white-color;
+  margin: 0 auto;
+  }
+
+.section-header {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 90px;
+  margin-top: 90px;
+}
+
+.section-header__caption {
+  display: block;
+  margin-bottom: 24px;
+  color: $primary-dark-color;
+  font-family: $accent-font-stack;
+  font-size: 24px;
+  font-weight: 400;
+  }
+
+.section-header__title {
+  margin-bottom: 46px;
+  color: $primary-dark-color;
+  font-family: $primary-font-stack;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+   &::after {
+  display: block;
+  content: '';
+  width: 60px;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 42px;
+  background-color: $pink-color;
+   }
+ }
+
+.section-header__text {
+  color: $secondary-dark-color;
+  font-family: $secondary-font-stack;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  }
+
+.information-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+
+  .information-list__post {
+      display: flex;
+    }
+
+  .information-list__content {
+      width: 300px;
+      margin-left: 10px;
+    }
+
+  .information-list__item {
+      flex: 0 0 30%;
+      margin-bottom: 120px;
+      &:nth-last-child(-n+3) {
+        margin-bottom: 0;
+        }
+      }
+
+  .information-list__header {
+      display: block;
+      margin-bottom: 14px;
+      font-size: 14px;
+      font-family: $primary-font-stack;
+      color: $primary-dark-color;
+      text-transform: uppercase;
+      font-weight: 700;
+      }
+
+  .information-list__text {
+      font-size: 15px;
+      font-family: $secondary-font-stack;
+      color: $secondary-dark-color;
+      font-weight: 400;
+      line-height: 24px;
+      }
+
+  //TEAM LIST
+  .team-wrapper {
+    background-color: $primary-white-color;
+    max-width: $container-width;
+    margin: 0 auto;
+    }
+  .team-list {
+    display: flex;
+    justify-content: space-between;
+    &__item {
+      flex: 0 0 30%;
+      }
+    }
+
+  .team-card {
+    background-color: $aqua-color;
+    &:hover .team-card__content {
+      transform: translate(-15px, -15px);
+      &::after {
+        opacity: 0.7;
+        }
+      }
+    &:hover .team-card__icons {
+      opacity: 1;
+      background-color: $yellow-color;
+      }
+    }
+
+  .team-card__content {
+    position: relative;
+    transition: transform 0.2s linear;
+    &::after {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      content: '';
+      background-image: linear-gradient(to top,
+      $yellow-color 0%,
+      $pink-color 100%);
+      transition: 0.2s linear;
+      }
+    }
+  .team-card__icons {
+    display: flex;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    transition: opacity 0.2s linear;
+    }
+  .team-card__icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin-right: 1px;
+    &:last-child {
+      margin-right: 0;
+      }
+    &:hover {
+      background-color: $pink-color;
+      }
+    &:hover > svg {
+      fill: $primary-white-color;
+      }
+    & > svg {
+      display: inline-block;
+      padding-top: 12px;
+      padding-left: 12px;
+      height: 40px;
+      width: 40px;
+      fill: $pink-color;
+      }
+    }
+  .team-card__meta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 31px 0;
+    background-color: $primary-white-color;
+    }
+    
+    .team-card__name {
+    display: block;
+    margin-bottom: 16px;
+    color: $primary-dark-color;
+    font-family: $primary-font-stack;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    }
+    
+    .team-card__post {
+    display: block;
+    color: $secondary-dark-color;
+    font-family: $secondary-font-stack;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 24px;
+    }
+
+  //FOOTER
+  .footer-wrapper {
+    max-width: $container-width;
+    background-color: $primary-white-color;
+    min-height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+  .footer__text {
+    font-size: 14px;
+    font-family: $primary-font-stack;
+    color: $primary-dark-color;
+    text-align: center;
+    }
+    
+    .footer-info-text {
+    font-size: 15px;
+    font-family: $secondary-font-stack;
+    color: $pale-color;
+    padding-left: 10px;
+    
+    }
+    
+    .color-word {
+    color: $pink-color;
+    }
+    
+    
+    .footer__button {
+    background-color: $aqua-color;
+    margin-left: 100px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $primary-white-color;
+    height: 100%;
+    border: none;
+    }
